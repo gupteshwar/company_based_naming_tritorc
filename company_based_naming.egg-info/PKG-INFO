@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: company-based-naming
+Version: 0.0.1
+Summary: Set naming of any doctype based on company 
+Author: First ERP
+Author-email: support@firsterp.in
+Requires-Dist: frappe

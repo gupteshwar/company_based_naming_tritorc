@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include company_based_naming *.css
+recursive-include company_based_naming *.csv
+recursive-include company_based_naming *.html
+recursive-include company_based_naming *.ico
+recursive-include company_based_naming *.js
+recursive-include company_based_naming *.json
+recursive-include company_based_naming *.md
+recursive-include company_based_naming *.png
+recursive-include company_based_naming *.py
+recursive-include company_based_naming *.svg
+recursive-include company_based_naming *.txt
+recursive-exclude company_based_naming *.pyc

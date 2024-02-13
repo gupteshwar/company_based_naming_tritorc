@@ -1,0 +1,53 @@
+{
+ "actions": [],
+ "autoname": "field:company",
+ "creation": "2020-08-18 02:34:04.193112",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "details"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "unique": 1
+  },
+  {
+   "fieldname": "details",
+   "fieldtype": "Table",
+   "ignore_user_permissions": 1,
+   "label": "Details",
+   "options": "Naming Setting Detail"
+  }
+ ],
+ "links": [],
+ "modified": "2023-01-19 09:02:37.402503",
+ "modified_by": "Administrator",
+ "module": "Company Based Naming",
+ "name": "Naming Setting",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

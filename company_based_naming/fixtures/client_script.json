@@ -1,0 +1,90 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Quotation",
+  "modified": "2020-09-06 20:44:23.463334",
+  "name": "Quotation-Client",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "script": "frappe.ui.form.on('Quotation', {\n\tcompany(frm) {\n\t\t// your code here\n\t\tfrappe.call({\n\t\t    method:\"company_based_naming.custom_methods.get_series_1\",\n\t\t    args:{\n\t\t        \"company\":cur_frm.doc.company,\n\t\t        \"doctype\":cur_frm.doc.doctype   \n\t\t    },\n\t\t    callback: function(r){\n\t\t        console.log(r.message)\n\t\t        var series=[]\n\t\t        r.message.forEach(function(element){\n\t\t            console.log(element.naming_series_)\n\t\t            series.push(element.naming_series_)\n\t\t        })\n\t\t        if(series.length>0){\n\t\t        cur_frm.set_df_property('naming_series', 'options', series);\n\t\t        cur_frm.refresh_field('naming_series');\n\t\t            \n\t\t        }\n\t\t    }\n\t\t})\n\t}\n})"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Sales Invoice",
+  "modified": "2020-09-06 20:45:41.886463",
+  "name": "Sales Invoice-Client",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "script": "frappe.ui.form.on('Sales Invoice', {\n\tcompany(frm) {\n\t\t// your code here\n\t\tfrappe.call({\n\t\t    method:\"company_based_naming.custom_methods.get_series_1\",\n\t\t    args:{\n\t\t        \"company\":cur_frm.doc.company,\n\t\t        \"doctype\":cur_frm.doc.doctype   \n\t\t    },\n\t\t    callback: function(r){\n\t\t        console.log(r.message)\n\t\t        var series=[]\n\t\t        r.message.forEach(function(element){\n\t\t            console.log(element.naming_series_)\n\t\t            series.push(element.naming_series_)\n\t\t        })\n\t\t        if(series.length>0){\n\t\t        cur_frm.set_df_property('naming_series', 'options', series);\n\t\t        cur_frm.refresh_field('naming_series');\n\t\t            \n\t\t        }\n\t\t    }\n\t\t})\n\t}\n})"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Sales Order",
+  "modified": "2020-09-06 20:46:08.718993",
+  "name": "Sales Order-Client",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "script": "frappe.ui.form.on('Sales Order', {\n\tcompany(frm) {\n\t\t// your code here\n\t\tfrappe.call({\n\t\t    method:\"company_based_naming.custom_methods.get_series_1\",\n\t\t    args:{\n\t\t        \"company\":cur_frm.doc.company,\n\t\t        \"doctype\":cur_frm.doc.doctype   \n\t\t    },\n\t\t    callback: function(r){\n\t\t        console.log(r.message)\n\t\t        var series=[]\n\t\t        r.message.forEach(function(element){\n\t\t            console.log(element.naming_series_)\n\t\t            series.push(element.naming_series_)\n\t\t        })\n\t\t        if(series.length>0){\n\t\t        cur_frm.set_df_property('naming_series', 'options', series);\n\t\t        cur_frm.refresh_field('naming_series');\n\t\t            \n\t\t        }\n\t\t    }\n\t\t})\n\t}\n})"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Purchase Order",
+  "modified": "2020-09-06 20:46:38.484267",
+  "name": "Purchase Order-Client",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "script": "frappe.ui.form.on('Purchase Order', {\n\tcompany(frm) {\n\t\t// your code here\n\t\tfrappe.call({\n\t\t    method:\"company_based_naming.custom_methods.get_series_1\",\n\t\t    args:{\n\t\t        \"company\":cur_frm.doc.company,\n\t\t        \"doctype\":cur_frm.doc.doctype   \n\t\t    },\n\t\t    callback: function(r){\n\t\t        console.log(r.message)\n\t\t        var series=[]\n\t\t        r.message.forEach(function(element){\n\t\t            console.log(element.naming_series_)\n\t\t            series.push(element.naming_series_)\n\t\t        })\n\t\t        if(series.length>0){\n\t\t        cur_frm.set_df_property('naming_series', 'options', series);\n\t\t        cur_frm.refresh_field('naming_series');\n\t\t            \n\t\t        }\n\t\t    }\n\t\t})\n\t}\n})"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Purchase Invoice",
+  "modified": "2020-09-06 20:47:00.945476",
+  "name": "Purchase Invoice-Client",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "script": "frappe.ui.form.on('Purchase Invoice', {\n\tcompany(frm) {\n\t\t// your code here\n\t\tfrappe.call({\n\t\t    method:\"company_based_naming.custom_methods.get_series_1\",\n\t\t    args:{\n\t\t        \"company\":cur_frm.doc.company,\n\t\t        \"doctype\":cur_frm.doc.doctype   \n\t\t    },\n\t\t    callback: function(r){\n\t\t        console.log(r.message)\n\t\t        var series=[]\n\t\t        r.message.forEach(function(element){\n\t\t            console.log(element.naming_series_)\n\t\t            series.push(element.naming_series_)\n\t\t        })\n\t\t        if(series.length>0){\n\t\t        cur_frm.set_df_property('naming_series', 'options', series);\n\t\t        cur_frm.refresh_field('naming_series');\n\t\t            \n\t\t        }\n\t\t    }\n\t\t})\n\t}\n})"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Journal Entry",
+  "modified": "2020-09-06 20:47:20.308532",
+  "name": "Journal Entry-Client",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "script": "frappe.ui.form.on('Journal Entry', {\n\tcompany(frm) {\n\t\t// your code here\n\t\tfrappe.call({\n\t\t    method:\"company_based_naming.custom_methods.get_series_1\",\n\t\t    args:{\n\t\t        \"company\":cur_frm.doc.company,\n\t\t        \"doctype\":cur_frm.doc.doctype   \n\t\t    },\n\t\t    callback: function(r){\n\t\t        console.log(r.message)\n\t\t        var series=[]\n\t\t        r.message.forEach(function(element){\n\t\t            console.log(element.naming_series_)\n\t\t            series.push(element.naming_series_)\n\t\t        })\n\t\t        if(series.length>0){\n\t\t        cur_frm.set_df_property('naming_series', 'options', series);\n\t\t        cur_frm.refresh_field('naming_series');\n\t\t            \n\t\t        }\n\t\t    }\n\t\t})\n\t}\n})"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Material Request",
+  "modified": "2020-09-06 20:47:42.956176",
+  "name": "Material Request-Client",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "script": "frappe.ui.form.on('Material Request', {\n\tcompany(frm) {\n\t\t// your code here\n\t\tfrappe.call({\n\t\t    method:\"company_based_naming.custom_methods.get_series_1\",\n\t\t    args:{\n\t\t        \"company\":cur_frm.doc.company,\n\t\t        \"doctype\":cur_frm.doc.doctype   \n\t\t    },\n\t\t    callback: function(r){\n\t\t        console.log(r.message)\n\t\t        var series=[]\n\t\t        r.message.forEach(function(element){\n\t\t            console.log(element.naming_series_)\n\t\t            series.push(element.naming_series_)\n\t\t        })\n\t\t        if(series.length>0){\n\t\t        cur_frm.set_df_property('naming_series', 'options', series);\n\t\t        cur_frm.refresh_field('naming_series');\n\t\t            \n\t\t        }\n\t\t    }\n\t\t})\n\t}\n})"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Lead",
+  "modified": "2020-09-06 20:48:29.163728",
+  "name": "Lead-Client",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "script": "frappe.ui.form.on('Lead', {\n\tcompany(frm) {\n\t\t// your code here\n\t\tfrappe.call({\n\t\t    method:\"company_based_naming.custom_methods.get_series_1\",\n\t\t    args:{\n\t\t        \"company\":cur_frm.doc.company,\n\t\t        \"doctype\":cur_frm.doc.doctype   \n\t\t    },\n\t\t    callback: function(r){\n\t\t        console.log(r.message)\n\t\t        var series=[]\n\t\t        r.message.forEach(function(element){\n\t\t            console.log(element.naming_series_)\n\t\t            series.push(element.naming_series_)\n\t\t        })\n\t\t        if(series.length>0){\n\t\t        cur_frm.set_df_property('naming_series', 'options', series);\n\t\t        cur_frm.refresh_field('naming_series');\n\t\t            \n\t\t        }\n\t\t    }\n\t\t})\n\t}\n})"
+ }
+]

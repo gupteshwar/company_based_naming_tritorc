@@ -1,0 +1,52 @@
+{
+ "creation": "2020-08-18 02:32:59.782739",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "enable",
+  "doctypes",
+  "naming_series_",
+  "enable_multiple_series"
+ ],
+ "fields": [
+  {
+   "fieldname": "doctypes",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Doctypes",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "naming_series_",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Naming Series"
+  },
+  {
+   "default": "1",
+   "fieldname": "enable",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Enable"
+  },
+  {
+   "default": "0",
+   "fieldname": "enable_multiple_series",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Enable Multiple Series"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-08-30 22:00:07.683101",
+ "modified_by": "Administrator",
+ "module": "Company Based Naming",
+ "name": "Naming Setting Detail",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
